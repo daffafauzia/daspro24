@@ -1,0 +1,481 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "7c2f301c-b0b2-4792-b6b5-e564a365339e",
+   "metadata": {},
+   "source": [
+    "<h1>Operator Aritmatika</h1>"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "feea9fb5-d172-4f7d-a8e3-9112462bf12e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Isikan nilai X : 10\n",
+      "Isikan nilai Y : 10\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Penjulahan  10 + 10 = 20\n",
+      "Pengurangan  10 - 10 = 0\n",
+      "Perkalian  10 * 10 = 100\n",
+      "Pembagian  10 / 10 = 1.0\n",
+      "Sisa Bagi  10 % 10 = 0\n",
+      "Pangkat  10 ** 10 = 10000000000\n",
+      "Pembagian Bulat  10 // 10 = 1\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = int(input(\"Isikan nilai X :\"))\n",
+    "y = int(input(\"Isikan nilai Y :\"))\n",
+    "\n",
+    "hasilTambah = x + y\n",
+    "hasilKurang = x - y\n",
+    "hasilKali = x * y\n",
+    "hasilBagi = x / y\n",
+    "hasilModulus = x % y\n",
+    "hasilPangkat = x ** y\n",
+    "hasilBagiBulat = x // y\n",
+    "\n",
+    "print(\"Penjulahan \", x, \"+\", y, \"=\", hasilTambah)\n",
+    "print(\"Pengurangan \", x, \"-\", y, \"=\", hasilKurang)\n",
+    "print(\"Perkalian \", x, \"*\", y, \"=\", hasilKali)\n",
+    "print(\"Pembagian \", x, \"/\", y, \"=\", hasilBagi)\n",
+    "print(\"Sisa Bagi \", x, \"%\", y, \"=\", hasilModulus)\n",
+    "print(\"Pangkat \", x, \"**\", y, \"=\", hasilPangkat)\n",
+    "print(\"Pembagian Bulat \", x, \"//\", y, \"=\", hasilBagiBulat)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "29d0b32c-3f66-4fa3-9fe8-1e75a89bd559",
+   "metadata": {},
+   "source": [
+    "<h1>Operator Penugasan<h1>"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "c2931676-be02-40d7-a60a-ef8f362c8ffd",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Isikan Nilai : 10\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Nilai awal dari <nilai> : 10\n",
+      "Nilai setelah ditambahkan 3: 13\n",
+      "Nilai setelah dikurangi 5: 8\n",
+      "Nilbagih2dikalikan 10: 80\n",
+      "Nilai setelah dibagi 2: 40.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "nilai = int(input(\"Isikan Nilai :\"))\n",
+    "print(\"Nilai awal dari <nilai> :\", nilai)\n",
+    "nilai+=3\n",
+    "print(\"Nilai setelah ditambahkan 3:\", nilai)\n",
+    "nilai-=5\n",
+    "print(\"Nilai setelah dikurangi 5:\", nilai)\n",
+    "nilai*=10\n",
+    "print(\"Nilbagih2dikalikan 10:\", nilai)\n",
+    "nilai/=2\n",
+    "print(\"Nilai setelah dibagi 2:\", nilai)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "79d17ce1-7373-4f81-a410-e3d5eaba9b35",
+   "metadata": {},
+   "source": [
+    "<h1>Operator Logika<h1>"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "2bdcb081-3ddc-4353-9558-5bdd09b35b01",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Isikan Nilai 1: 6\n",
+      "Isikan Nilai 2: 6\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Apakah  6 = 6 ?: True\n",
+      "Apakah  6 != 6 ?: False\n",
+      "Apakah  6 > 6 ?: False\n",
+      "Apakah  6 >= 6 ?: True\n",
+      "Apakah  6 < 6 ?: False\n",
+      "Apakah  6 <= 6 ?: True\n"
+     ]
+    }
+   ],
+   "source": [
+    "val1 = int(input('Isikan Nilai 1:'))\n",
+    "val2 = int(input('Isikan Nilai 2:'))\n",
+    "\n",
+    "print(\"Apakah \",val1,\"=\",val2,\"?:\",val1==val2)\n",
+    "print(\"Apakah \",val1,\"!=\",val2,\"?:\",val1!=val2)\n",
+    "print(\"Apakah \",val1,\">\",val2,\"?:\",val1>val2)\n",
+    "print(\"Apakah \",val1,\">=\",val2,\"?:\",val1>=val2)\n",
+    "print(\"Apakah \",val1,\"<\",val2,\"?:\",val1<val2)\n",
+    "print(\"Apakah \",val1,\"<=\",val2,\"?:\",val1<=val2)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "16e182e8-51c3-4a66-8d05-36fa4ed211bd",
+   "metadata": {},
+   "source": [
+    "<h1>Operator Identitas</h1>"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "1082afa4-4aed-4590-96a7-a6c08abfa4e7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Isikan nilai a 6\n",
+      "Isikan nilai b 7\n",
+      "Isikan nilai c 8\n",
+      "Isikan nilai d 9\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Nilai a: 6\n",
+      "Nilai b: 7\n",
+      "Nilai c: 8\n",
+      "Nilai d: 9\n",
+      "Apakah a > b dan c < d False\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = int(input('Isikan nilai a'))\n",
+    "b = int(input('Isikan nilai b'))\n",
+    "c = int(input('Isikan nilai c'))\n",
+    "d = int(input('Isikan nilai d'))\n",
+    "print(\"Nilai a:\", a)\n",
+    "print(\"Nilai b:\", b)\n",
+    "print(\"Nilai c:\", c)\n",
+    "print(\"Nilai d:\", d)\n",
+    "\n",
+    "a = int(input('Isikan nilai a'))\n",
+    "b = int(input('Isikan nilai b'))\n",
+    "c = int(input('Isikan nilai c'))\n",
+    "d = int(input('Isikan nilai d'))\n",
+    "print(\"Nilai a:\", a)\n",
+    "print(\"Nilai b:\", b)\n",
+    "print(\"Nilai c:\", c)\n",
+    "print(\"Nilai d:\", d)\n",
+    "\n",
+    "print(\"Apakah a > b dan c < d?\", a > b and c < d) #logikan and\n",
+    "print(\"Apakah a > b atau c < d?\", a > b or c < d) #logika or\n",
+    "print(\"Apakah a > b dan c < d?\", not(a > b and c < d)) #logika not and"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "ec807635-9bb1-4867-9bdc-82884e468128",
+   "metadata": {},
+   "source": [
+    "<h1>Operator Identitas</h1>"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "61ca57e7-c7c9-41f7-bc07-cf99a0abe9bf",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Memori address dari num1 140715923352280\n",
+      "Memori address dari num2 140715923352280\n",
+      "Memori address dari num3 140715923352280\n",
+      "Apakah num1 adalah num2 True\n",
+      "Apakah num2 adalah num3 True\n",
+      "Apakah num1 bukan num2 False\n"
+     ]
+    }
+   ],
+   "source": [
+    "num1 = 10\n",
+    "num2 = 10\n",
+    "num3 = num2\n",
+    "\n",
+    "print(\"Memori address dari num1\", id(num1))\n",
+    "print(\"Memori address dari num2\", id(num2))\n",
+    "print(\"Memori address dari num3\", id(num3))\n",
+    "\n",
+    "print(\"Apakah num1 adalah num2\", num1 is num2)\n",
+    "print(\"Apakah num2 adalah num3\", num2 is num3)\n",
+    "print(\"Apakah num1 bukan num2\", num1 is not num2)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "03aa1347-fe53-4084-87f9-89cf1e8c8b54",
+   "metadata": {},
+   "source": [
+    "<h1>Operator Keanggotaan (Membership)<h1>"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "95122263-bf2f-4089-ba5e-76ba6d4893c1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Isikan nama yang dicari: Caca\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "False\n",
+      "False\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "nama  = input(\"Isikan nama yang dicari:\")\n",
+    "listNama = [\"Andi\",\"Budi\",\"Caca\",\"Dudi\",\"Erfan\"]\n",
+    "print(nama in listNama)\n",
+    "print(nama in listNama[0])\n",
+    "print(nama not in listNama)\n",
+    "print(nama not in listNama[0])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "4188ba0b-6a67-4889-9790-8b60b98770bb",
+   "metadata": {},
+   "source": [
+    "<h1>Operator Bitwise</h1>"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "id": "1435f216-14c2-4590-9b4e-eedf84e5097d",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "KeyboardInterrupt",
+     "evalue": "Interrupted by user",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mKeyboardInterrupt\u001b[0m                         Traceback (most recent call last)",
+      "Cell \u001b[1;32mIn[58], line 1\u001b[0m\n\u001b[1;32m----> 1\u001b[0m bil1 \u001b[38;5;241m=\u001b[39m \u001b[38;5;28mint\u001b[39m(\u001b[38;5;28minput\u001b[39m(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mIsikan bilangan 1:\u001b[39m\u001b[38;5;124m\"\u001b[39m))\n\u001b[0;32m      2\u001b[0m bil2 \u001b[38;5;241m=\u001b[39m \u001b[38;5;28mint\u001b[39m(\u001b[38;5;28minput\u001b[39m(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mIsikan bilangan 2:\u001b[39m\u001b[38;5;124m\"\u001b[39m))\n\u001b[0;32m      4\u001b[0m \u001b[38;5;28mprint\u001b[39m(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mBiner dari\u001b[39m\u001b[38;5;124m\"\u001b[39m,bil1,\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124m:\u001b[39m\u001b[38;5;124m\"\u001b[39m,\u001b[38;5;28mbin\u001b[39m(bil1))\n",
+      "File \u001b[1;32m~\\anaconda3\\Lib\\site-packages\\ipykernel\\kernelbase.py:1262\u001b[0m, in \u001b[0;36mKernel.raw_input\u001b[1;34m(self, prompt)\u001b[0m\n\u001b[0;32m   1260\u001b[0m     msg \u001b[38;5;241m=\u001b[39m \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mraw_input was called, but this frontend does not support input requests.\u001b[39m\u001b[38;5;124m\"\u001b[39m\n\u001b[0;32m   1261\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m StdinNotImplementedError(msg)\n\u001b[1;32m-> 1262\u001b[0m \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_input_request(\n\u001b[0;32m   1263\u001b[0m     \u001b[38;5;28mstr\u001b[39m(prompt),\n\u001b[0;32m   1264\u001b[0m     \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39m_parent_ident[\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mshell\u001b[39m\u001b[38;5;124m\"\u001b[39m],\n\u001b[0;32m   1265\u001b[0m     \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mget_parent(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mshell\u001b[39m\u001b[38;5;124m\"\u001b[39m),\n\u001b[0;32m   1266\u001b[0m     password\u001b[38;5;241m=\u001b[39m\u001b[38;5;28;01mFalse\u001b[39;00m,\n\u001b[0;32m   1267\u001b[0m )\n",
+      "File \u001b[1;32m~\\anaconda3\\Lib\\site-packages\\ipykernel\\kernelbase.py:1305\u001b[0m, in \u001b[0;36mKernel._input_request\u001b[1;34m(self, prompt, ident, parent, password)\u001b[0m\n\u001b[0;32m   1302\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mKeyboardInterrupt\u001b[39;00m:\n\u001b[0;32m   1303\u001b[0m     \u001b[38;5;66;03m# re-raise KeyboardInterrupt, to truncate traceback\u001b[39;00m\n\u001b[0;32m   1304\u001b[0m     msg \u001b[38;5;241m=\u001b[39m \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mInterrupted by user\u001b[39m\u001b[38;5;124m\"\u001b[39m\n\u001b[1;32m-> 1305\u001b[0m     \u001b[38;5;28;01mraise\u001b[39;00m \u001b[38;5;167;01mKeyboardInterrupt\u001b[39;00m(msg) \u001b[38;5;28;01mfrom\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m\n\u001b[0;32m   1306\u001b[0m \u001b[38;5;28;01mexcept\u001b[39;00m \u001b[38;5;167;01mException\u001b[39;00m:\n\u001b[0;32m   1307\u001b[0m     \u001b[38;5;28mself\u001b[39m\u001b[38;5;241m.\u001b[39mlog\u001b[38;5;241m.\u001b[39mwarning(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mInvalid Message:\u001b[39m\u001b[38;5;124m\"\u001b[39m, exc_info\u001b[38;5;241m=\u001b[39m\u001b[38;5;28;01mTrue\u001b[39;00m)\n",
+      "\u001b[1;31mKeyboardInterrupt\u001b[0m: Interrupted by user"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Isikan bilangan 1: 4\n"
+     ]
+    }
+   ],
+   "source": [
+    "bil1 = int(input(\"Isikan bilangan 1:\"))\n",
+    "bil2 = int(input(\"Isikan bilangan 2:\"))\n",
+    "\n",
+    "print(\"Biner dari\",bil1,\":\",bin(bil1))\n",
+    "print(\"Biner dari\",bil2,\":\",bin(bil2))\n",
+    "\n",
+    "#Bitwise &\n",
+    "bitwiseAnd = bil1 & bil2\n",
+    "print(bin(bil1))\n",
+    "print(bin(bil2))\n",
+    "print(\"------------\")\n",
+    "print(bin(bitwiseAnd))\n",
+    "print(\"Hasil desimalnya adalah:\",bitwiseAnd)\n",
+    "\n",
+    "#Bitwise |\n",
+    "bitwiseOr = bil1 | bil2\n",
+    "print(bin(bil1))\n",
+    "print(bin(bil2))\n",
+    "print(\"------------|\")\n",
+    "print(bin(bitwiseOr))\n",
+    "print(\"Hasil desimalnya adalah:\",bitwiseOr)\n",
+    "\n",
+    "#Bitwise ^\n",
+    "bitwiseXOR = bil1 ^ bil2\n",
+    "print(bin(bil1))\n",
+    "print(bin(bil2))\n",
+    "print(\"------------^\")\n",
+    "print(bin(bitwiseXOR))\n",
+    "print(\"Hasil desimalnya adalah:\",bitwiseXOR)\n",
+    "\n",
+    "#Bitwise << shift left\n",
+    "bitwiseSL= bil1 << bil2\n",
+    "print(bin(bil1),\"Digeser ke kiri sebanyak\",bil2,\"bit\")\n",
+    "print(\"Hasilnya adalah\",bin(bitwiseSL))\n",
+    "print(\"Nilai desimalnya adalah\",bitwiseSL)\n",
+    "\n",
+    "#Bitwise >> shift right\n",
+    "bitwiseSR= bil1 << bil2\n",
+    "print(bin(bil1),\"Digeser ke kanan sebanyak\",bil2,\"bit\")\n",
+    "print(\"Hasilnya adalah\",bin(bitwiseSR))\n",
+    "print(\"Nilai desimalnya adalah\",bitwiseSR)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1af90412-37bd-4c56-8a08-d319de648e2b",
+   "metadata": {},
+   "source": [
+    "<h1>Operator Ternary</h1>"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0823c9fc-6c9a-4de2-95e5-7b34a79efb10",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "number = int(input(\"Insert your number:\"))\n",
+    "oddEven = \"Bilangan Genap\" if number % 2==0 else \"Bilangan Ganjil\"\n",
+    "print(oddEven)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b02b3bcf-2303-44c4-869b-31077aeaed20",
+   "metadata": {},
+   "source": [
+    "<h1>Tugas</h1>"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 64,
+   "id": "179a5b51-1817-4ff3-8810-c30f58c63937",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Isikan Jumlah Pisang yang dibeli: 5\n",
+      "Isikan Jumlah kolak yang dibeli: 6\n",
+      "Isikan Jumlah nasi padang yang dibeli: 5\n",
+      "Isikan Jumlah es buah yang dibeli: 5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Pisang 5 = 65000\n",
+      "Kolak 6 = 30000\n",
+      "Nasi Padang 5 = 100000\n",
+      "Es Buah 5 = 50000\n",
+      "totalBelanja : 263000\n",
+      "Discount : 5 %\n",
+      "Total Bayar: 249850.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "pisangGoreng = int(input(\"Isikan Jumlah Pisang yang dibeli:\"))\n",
+    "kolak = int(input(\"Isikan Jumlah kolak yang dibeli:\"))\n",
+    "nasiPadang = int(input(\"Isikan Jumlah nasi padang yang dibeli:\"))\n",
+    "esBuah = int(input(\"Isikan Jumlah es buah yang dibeli:\"))\n",
+    "\n",
+    "print(\"Pisang\",pisangGoreng,\"=\",pisangGoreng * 13000)\n",
+    "print(\"Kolak\",kolak,\"=\",kolak * 5000)\n",
+    "print(\"Nasi Padang\",nasiPadang,\"=\",nasiPadang * 20000)\n",
+    "print(\"Es Buah\",esBuah,\"=\",esBuah * 10000)\n",
+    "totalBelanja = (pisangGoreng * 13000) + (kolak * 8000) + (nasiPadang * 20000) + (esBuah * 10000)\n",
+    "print(\"totalBelanja :\",totalBelanja)\n",
+    "discount = 5 if totalBelanja > 25000 else 0\n",
+    "totalBayar = totalBelanja - (totalBelanja * discount/100)\n",
+    "print(\"Discount :\",discount, \"%\")\n",
+    "print(\"Total Bayar:\",totalBayar)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0154d122-3abf-4224-ad22-0e1b4a96a3ae",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
